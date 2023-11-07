@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Rings</title>
+    <!--<link rel="stylesheet" href="./CSS_Web/estilos.css">-->
+
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Anton&family=Arvo:wght@400;700&display=swap');
+
+        * {
+            margin: 0;
+        }
+        body{
+            background-color:rgb(80, 255, 185);
+        }
+        body header nav{
+            background-color:rgb(80, 144, 255);
+        }
+        header h1{
+            position: absolute;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: white; 
+            font-size: 4em; 
+            z-index: 1; /* Hacemos esto para que el titulo aparezca superpuesto a la imagen */
+            font-family: 'Arvo', serif;
+            font-weight: 700;
+        }
+
+        /*CSS IMAGENES*/
+        .imagen-contenedor{
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+        }  
+        .imagen-contenedor img{
+            width: 100%;
+            display: block;
+        }
+
+        .imagenMain-contenedor{
+            text-align: center;
+        }
+        
+        .imagenMain-contenedor img{
+            max-width: 80%;
+            max-height: 350px;
+            display: block;
+            margin: 0 auto;
+        }
+
+        /*CSS NAVEGADOR*/
+        #contenedorNav{
+            text-align: center;
+            padding: 10px;
+        }
+        #contenedorNav ul{
+            display: inline-block;
+            list-style: none;
+            padding: 0;
+        }
+        #contenedorNav ul li{
+            display: inline;
+            margin: 10px;
+        }
+
+        /*CSS TEXTOS*/
+        h2{
+            text-align: center;
+            font-family: 'Arvo', serif;
+            font-weight: 400;
+        }
+        .texto-justificado{
+            text-align: justify;
+            margin: 10px;
+        }
+
+        /*CSS TABLAS*/
+        #contenedor_tablaModelos{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 55vh;
+        }
+        .modelosAnillo {
+            background-color: rgb(240, 240, 240);
+        }
+        .modelosAnillo th{
+            padding: 15px;
+            background-color: rgb(234, 250, 10);
+        }
+        .modelosAnillo td{
+            text-align: center;
+            background-color: rgb(250, 210, 10);
+        }
+
+        /*CSS VIDEO*/
+        #contenedor_linkVideo{
+            display: flex;
+            justify-content: center;
+        }
+        iframe {
+            border: none;
+        }
+
+        /*CSS FOOTER*/
+        footer{
+            text-align: center;
+            background-color: black;
+            color: white;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>SMART RINGS</h1>
+
+        <div class="imagen-contenedor">
+            <img src="./Imagenes_Web/Luna-Ring_Banner.jpeg" alt="Anillo inteligente">
+        </div>
+
+        <nav id="contenedorNav">
+            <ul>
+                <li><a href="#introduccion"><b>Introduccion</b></a></li>
+                <li><a href="#utilidades"><b>Utilidades</b></a></li>
+                <li><a href="#modelos"><b>Modelos</b></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <br>
+
+    <main>
+        <div id="introduccion">
+
+            <h2><b>Que son los Smart Rings.</b></h2>
+            <p class="texto-justificado">Los <i><b><A HREF="https://smartringnews.com/what-are-smart-rings-how-do-they-work/">Smart Rings</A></b></i> son una de las últimas novedades que ha irrumpido en el sector de los dispositivos <i>wearables</i>. Esta tecnología, a pesar de no ser aún tan popular como otras como pueden ser los <i>Smartwatches</i>; presenta una sería de ventajas que pueden impulsar su uso en el futuro.</p>
+
+            <p class="texto-justificado">Estos <i>Smart Rings</i> son muy parecidos a los anillos de toda la vida en cuanto a apariencia. Sin embargo, es su interior lo que diferencia a estos dispositivos; ya que en él dichos aparatos llevan integrados <i>Bluetooth</i>, un chip y sensores lo que les permite llevar a cabo <i>tareas electrónicas</i>.</p>
+
+            <div class="imagenMain-contenedor">
+                <img src="./Imagenes_Web/Xiaomi_recortada.png" alt="Funciones anillo inteligente">
+            </div>
+
+            <p class="texto-justificado">Aunque la aparición de estos dispositivos se pueda remontar a casi una década atrás, su popularidad a empezado a aumentar en la actualidad. Y es que uno de los mayores retos a la hora de fabricar estos aparatos electrónicos es la dificultad para integrar los sistemas anteriormente mencionados en el interior de algo de dimensiones tan reducidas. Es por ello que en los últinos años, con la entrada al sector de multinacionales del tamaño de <b>Apple</b> o <b>Microsoft</b> este ha presenciado un gran impulso.</p>
+        </div>
+
+        <div id="utilidades">
+
+            <h2><b>Utilidades de los Smart Rings.</b></h2>
+            <p class="texto-justificado">Actualmente la mayoría de las aplicaciones de estos anillos se basan en acortar o <i>automatizar</i> determinados procesos. Para ello se hace uso de la tecnología <b><A HREF="https://es.wikipedia.org/wiki/Comunicaci%C3%B3n_de_campo_cercano">NFC</A></b> (Near Field Communication), la cual nos permite llevar a cabo transacciones, intercambiar contenido digital o conectar dispositivos electrónicos de forma segura simplemente acercando los aparatos que vayan a realizar dichas acciones.</p>
+
+            <div class="imagenMain-contenedor">
+                <img src="./Imagenes_Web/Uses-NFC.png" alt="Funciones NFC">
+            </div>
+
+            <p class="texto-justificado">Algunos ejemplos de las funciones para las que se están usando los <i>Smart Rings</i> son para los pagos con <i>contactless</i>, el seguimiento de las actividades físicas o la salud y la interaccion con otros <i>devices</i> como pueden ser coches o casas inteligentes. No obstante, con la entrada en el sector de multinacionales no sería de extrañar que estos dispositivos sean cada vez más potentes, lo que a su vez abriría el horizante de oportunidades en cuanto a las posibles aplicaciones de estos aparatos.</p>
+            
+            <div id="contenedor_linkVideo">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/O4t3qqC7thI?si=zPsPrMvwIOQ1BsG8" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <br>
+        </div>
+
+        <div id="modelos">
+            <h2><b>Modelos de Smart Rings.</b></h2>
+
+            <br>
+
+            <div id="contenedor_tablaModelos">
+                <table class="modelosAnillo">
+                    <tr>
+                        <th>Imagen</th>
+                        <th>Marca</th>
+                        <th>Modelo</th>
+                        <th>Permite hacer pagos</th>
+                        <th>Monitoreo de actividad</th>
+                        <th>Resistente al agua</th>
+                    </tr>
+                    <tr>
+                        <td><img class="imgTabla" src="Imagenes_Web/Img_SinFondo_PNG/Img_Anillo_1.png" alt="ring1" width="140" height="140"></td>
+                        <td>COLMO</td>
+                        <td>COLMO Tesla Accesories Llavero</td>
+                        <td>No</td>
+                        <td>No</td>
+                        <td>Si</td>
+                    </tr>
+                    <tr>
+                        <td><img class="imgTabla" src="Imagenes_Web/Img_SinFondo_PNG/Img_Anillo_2.png" alt="ring2" width="105" height="105"></td>
+                        <td>Timer</td>
+                        <td>Jakcom R3 Anillo multifuncional inteligente NFC</td>
+                        <td>Si</td>
+                        <td>No</td>
+                        <td>Si</td>
+                    </tr>
+                    <tr>
+                        <td><img class="imgTabla" src="Imagenes_Web/Img_SinFondo_PNG/Img_Anillo_3.png" alt="ring3" width="105" height="105"></td>
+                        <td>Sleepon</td>
+                        <td>Sleepon pulsixómetro inalámbrico</td>
+                        <td>No</td>
+                        <td>Si</td>
+                        <td>Si</td>
+                    </tr>
+                </table>
+            </div>
+            
+        </div>
+    </main>
+
+    <footer>
+        <b>
+            <i>Por Gaspar Barreras</i>
+        </b>
+    </footer>
+</body>
+</html>
